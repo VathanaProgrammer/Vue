@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<title>Title</title>
+</head>
+<style>
+    div{
+        padding: 20px;
+        width: 250px;
+        border: dashed 1px solid;
+    }
+    .myClass{
+        background-color: green;
+    }
+</style>
+<body>
+    <p class="fs-2 fw-bold">Eample with 'v-if' and 'v-else' in Vue</p>
+    <div id="app">
+        <div v-if="isInStock">
+            Avialable
+        </div>
+        <div v-else>
+            Out of stock
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script>
+    const app = Vue.createApp({
+        data(){
+            return{
+                isInStock: true
+            }
+        }
+    })
+
+    app.mount("#app")
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
